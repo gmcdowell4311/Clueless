@@ -1,0 +1,74 @@
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> 
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/7.2.0/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/7.2.0/firebase-auth.js"></script>
+    <!--script defer src="/__/firebase/7.2.0/firebase-database.js"></script -->
+    <script defer src="/__/firebase/7.2.0/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/7.2.0/firebase-storage.js"></script>
+    <script defer src="/__/firebase/7.2.0/firebase-firestore.js"></script>
+     <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+    <link rel="stylesheet" href="styles/site.css"> 
+  </head>
+  <body>
+    <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse mb-4 navbar">
+      <span class="logo"><img src="img/logo.png"></span>
+    </nav>
+     <div class="container-fluid">
+        <div class="row">
+           <div class="col-sm-5">
+              <div> 
+                 <span class="h3" style="display: inline;"> Press button to communicate between subsystems:</span>
+              </div>
+              <div>
+                  <span style="display: inline;">
+                      <button onclick="googleLogin()">
+                          User Service
+                        </button>
+                   </span>
+                   <span style="display: inline;">
+                      <button onclick="googleLogin()">
+                          Game Service
+                        </button>
+                   </span>
+                   <span style="display: inline;">
+                      <button onclick="googleLogin()">
+                            Action Service
+                        </button>
+                   </span>
+                   <span style="display: inline;">
+                      <button onclick="googleLogin()">
+                          Login with Google
+                        </button>
+                   </span>
+              </div>
+              <div>
+                 <span>
+                    <textarea class="output" id="command_history"></textarea>
+                 </span>
+              </div>
+           </div>
+        </div>
+     </div>
+    <!-- <h1>Fire Base Test</h1>
+
+    <button onclick="googleLogin()">
+      Login with Google
+    </button>
+
+    <h1 id="title">Change me</h1>
+    <input onchange="updatePost(event)"> -->
+
+    <script src="app.js"></script>
+    
+  </body> 
+</html>

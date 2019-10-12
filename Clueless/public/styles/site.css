@@ -1,0 +1,42 @@
+img {
+    width:240px; /* you can use % */
+    height: auto;
+ }
+
+ html {
+    width: 100%;
+    font-family: Helvetica, Arial, Open Sans, sans-serif;
+    font-size: 10pt;
+ }
+ span {display: block;}
+ div {
+    display: block;
+    padding: 5px;
+ }
+ table {
+    table-layout: fixed;
+    width: 100%;
+    padding: 1px;
+ }
+ input,textarea {
+    border: 1px solid lightgrey;
+    font-family: Helvetica, Arial, Open Sans, sans-serif;
+    font-size: 12pt;
+    padding: 5px;
+ }
+
+ .full {width: 100%;}
+.fifty {width: 50%;}
+.sixty {width: 60%;}
+.seventy {width: 70%;}
+.ninety {width: 90%;}
+.main {
+   float: left;
+   width: 50%;
+}
+.output {
+    display:inline-block;
+    border: solid 1px #000;
+    min-height: 700px;
+    width: 800px;
+}
